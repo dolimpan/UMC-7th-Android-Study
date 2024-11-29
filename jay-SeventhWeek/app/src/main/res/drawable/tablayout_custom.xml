@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:height="2dp" /> <!-- 인디케이터 두께 -->
+    <solid android:color="@color/purple_500" /> <!-- 인디케이터 색상 -->
+    <padding
+        android:left="24dp"
+        android:right="24dp" />
+</shape>
