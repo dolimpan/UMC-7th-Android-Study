@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_flo_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:id="@+id/box"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:hint="아이디(이메일)"
+            android:textSize="10sp"
+            android:id="@+id/email_field"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/register"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/email_field"
+            app:layout_constraintTop_toTopOf="@id/email_field"
+            app:layout_constraintBottom_toBottomOf="@id/email_field"
+            android:text=' @ '
+            />
+        <EditText
+            android:hint="직접입력"
+            android:textSize="10sp"
+            android:id="@+id/email_field_2"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/register"
+            app:layout_constraintStart_toEndOf="@id/at"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="비밀번호"
+        android:textSize="10sp"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_field"
+        android:backgroundTint="@color/purple_700"
+        android:text="로그인"
+        android:textColor="@color/white"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:text="회원가입"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="@id/login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

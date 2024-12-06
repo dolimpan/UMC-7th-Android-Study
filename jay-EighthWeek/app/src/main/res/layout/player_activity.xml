@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+        android:id="@+id/player_pannel_btn_wifi_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src ="@drawable/btn_player_go_list"
+            app:layout_constraintStart_toEndOf="@id/player_pannel_btn_eq_iv"
+        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+        android:id="@+id/player_pannel_btn_eq_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src ="@drawable/btn_player_eq_off"
+        app:layout_constraintStart_toEndOf="@id/player_pannel_btn_setting_iv"
+        app:layout_constraintTop_toTopOf="parent"/>
+        <ImageView
+        android:id="@+id/player_pannel_btn_setting_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:src ="@drawable/btn_player_setting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+            />
+    <ImageView
+        android:id="@+id/player_pannel_btn_small_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src ="@drawable/btn_main_arrow_more"
+        android:rotation="90"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/player_pannel_btn_more_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:src ="@drawable/btn_player_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_btn_small_iv"
+        />
+    <TextView
+        android:id="@+id/player_pannel_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="라일락"
+        android:textStyle="bold"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_btn_more_iv"
+        android:layout_marginTop="30dp"
+        android:gravity="center" />
+
+
+    <TextView
+        android:id="@+id/player_pannel_artist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이유 (IU)"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_title_tv"
+        app:layout_constraintEnd_toStartOf="@id/player_pannel_artist_info_iv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+
+
+    <ImageView
+        android:id="@+id/player_pannel_artist_info_iv"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:src ="@drawable/btn_main_arrow_more"
+        app:layout_constraintTop_toTopOf="@id/player_pannel_artist_tv"
+        app:layout_constraintBottom_toBottomOf="@id/player_pannel_artist_tv"
+        app:layout_constraintStart_toEndOf="@id/player_pannel_artist_tv"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/player_pannel_albumcover_iv"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/img_album_exp2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_artist_tv"/>
+
+    <TextView
+        android:id="@+id/player_pannel_lyrics1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_albumcover_iv"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id="@+id/player_pannel_lyrics2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#808080"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_lyrics1_tv"
+        android:paddingTop="2dp"
+        />
+
+    <ImageView
+        android:id="@+id/player_pannel_heart_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_my_like_off"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_lyrics2_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/player_pannel_dislike_iv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+
+        />
+
+    <ImageView
+        android:id="@+id/player_pannel_dislike_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_player_unlike_off"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_lyrics2_tv"
+        app:layout_constraintStart_toEndOf="@id/player_pannel_heart_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/player_pannel_heart_iv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:progressTint="#6200EE"
+        android:layout_marginTop="20dp"
+        android:thumb="@null"
+    />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:paddingStart="14dp"
+        android:text="0:00"
+        app:layout_constraintStart_toStartOf="@id/seekBar"
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        />
+
+    <TextView
+        android:id="@+id/endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="12sp"
+        android:text="1:00"
+        app:layout_constraintEnd_toEndOf="@id/seekBar"
+        app:layout_constraintTop_toBottomOf="@id/seekBar"
+        android:paddingEnd="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/endTime"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:src="@drawable/btn_player_play"
+        />
+
+    <ImageView
+        android:id="@+id/next"
+        app:layout_constraintStart_toEndOf="@id/play"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintBottom_toBottomOf="@id/play"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:src="@drawable/btn_miniplayer_next"
+        />
+
+    <ImageView
+        android:id="@+id/prev"
+        app:layout_constraintEnd_toStartOf="@id/play"
+        app:layout_constraintTop_toTopOf="@id/play"
+        app:layout_constraintBottom_toBottomOf="@id/play"
+        android:layout_height="60dp"
+        android:layout_width="60dp"
+        android:src="@drawable/btn_miniplayer_next"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
